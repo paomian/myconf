@@ -1,3 +1,4 @@
+"一位学长的vim配置文件长，且强大，可是我还是用的不习惯
 map <F9> :call SaveInputData()<CR>
 func! SaveInputData()
 	exec "tabnew"

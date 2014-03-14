@@ -1,0 +1,61 @@
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'terryma/vim-multiple-cursors'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/vim-snippets"
+Bundle "garbas/vim-snipmate"
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'Townk/vim-autoclose'
+Bundle 'scrooloose/nerdtree'
+Bundle 'vim-scripts/VimClojure'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'Blackrush/vim-gocode'
+Bundle 'mattn/emmet-vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'jimenezrick/vimerl'
+Bundle 'WolfgangMehner/vim-plugins'
+"Bundle 'bling/vim-airline'
+
+filetype plugin indent on     " required! "
+syntax on
+"change windows
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <silent> <F6> :NERDTree<CR>
+
+let g:airline_powerline_fonts = 1
+
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs  "
+set t_Co=256
+
+"clojure彩虹括号
+let vimclojure#ParenRainbow = 1
+
+"取消markdown折叠
+let g:vim_markdown_folding_disabled=1
+
+"erl显示信息
+let erlang_skel_header = {"author": "paomian","owner" : "paomian","year":"2014"}
+let erlang_force_use_vimerl_indent = 1
+
+
+set softtabstop=4 
+set ts=4
+set shiftwidth=4
+set number
+colorscheme Tomorrow-Night-Bright
